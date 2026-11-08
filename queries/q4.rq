@@ -1,0 +1,5 @@
+PREFIX ex: <http://example.org/kg#>
+SELECT ?person (COUNT(?place) as ?num_places) WHERE {
+  ?person ex:bornIn ?place .
+} GROUP BY ?person
+HAVING (COUNT(?place) >= 2)

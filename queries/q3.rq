@@ -1,0 +1,6 @@
+PREFIX ex: <http://example.org/kg#>
+SELECT ?person1 ?person2 ?place WHERE {
+  ?person1 ex:bornIn ?place .
+  ?person2 ex:bornIn ?place .
+  FILTER(?person1 != ?person2)
+}

@@ -1,0 +1,5 @@
+PREFIX ex: <http://example.org/kg#>
+SELECT ?person ?place WHERE {
+  ?person a ex:Person .
+  OPTIONAL { ?person ex:bornIn ?place . }
+}

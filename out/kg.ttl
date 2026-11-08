@@ -1,0 +1,93 @@
+@prefix ex: <http://example.org/kg#> .
+
+ex:Albert_Einstein a ex:Person ;
+    ex:bornIn ex:Ulm ;
+    ex:worksAt ex:Academy,
+        ex:Berlin,
+        ex:Italy,
+        ex:Milan,
+        ex:National_Association_Advancement_Colored_People_%28_NAACP_%29,
+        ex:Pavia,
+        ex:Prussian_Academy_Sciences_and_Humboldt_University_Berlin,
+        ex:US .
+
+ex:Erwin_Schr%C3%B6dinger a ex:Person ;
+    ex:worksAt ex:University_of_Zurich .
+
+ex:Marie_Curie a ex:Person ;
+    ex:bornIn ex:Warsaw ;
+    ex:educatedAt ex:Flying_University,
+        ex:Paris,
+        ex:Paris_Marie,
+        ex:University_of_Paris,
+        ex:University_of_Paris_Marie_in_1891 ;
+    ex:worksAt ex:LibriVox_domain,
+        ex:Open_Library_Works_by_Marie_Curie_at_Project_Gutenberg_Works .
+
+ex:Pieter_Zeeman a ex:Person ;
+    ex:bornIn ex:Zonnemaire ;
+    ex:worksAt ex:Amsterdam .
+
+ex:Yasir_Siddiqui a ex:Person ;
+    ex:bornIn ex:Sukkur ;
+    ex:doctoralAdvisor ex:Bushra_Awan ;
+    ex:educatedAt ex:Ashdown_Institute_of_Technology,
+        ex:Riverbend_College_of_Science ;
+    ex:receivedAward ex:Alderwick_Medal ;
+    ex:worksAt ex:Marlow_Institute_of_Technology,
+        ex:Westmere_Institute_of_Technology .
+
+ex:Academy a ex:Organization .
+
+ex:Alderwick_Medal a ex:Award .
+
+ex:Amsterdam a ex:Organization .
+
+ex:Ashdown_Institute_of_Technology a ex:Organization .
+
+ex:Berlin a ex:Organization .
+
+ex:Bushra_Awan a ex:Person .
+
+ex:Flying_University a ex:Organization .
+
+ex:Italy a ex:Organization .
+
+ex:LibriVox_domain a ex:Organization .
+
+ex:Marlow_Institute_of_Technology a ex:Organization .
+
+ex:Milan a ex:Organization .
+
+ex:National_Association_Advancement_Colored_People_%28_NAACP_%29 a ex:Organization .
+
+ex:Open_Library_Works_by_Marie_Curie_at_Project_Gutenberg_Works a ex:Organization .
+
+ex:Paris a ex:Organization .
+
+ex:Paris_Marie a ex:Organization .
+
+ex:Pavia a ex:Organization .
+
+ex:Prussian_Academy_Sciences_and_Humboldt_University_Berlin a ex:Organization .
+
+ex:Riverbend_College_of_Science a ex:Organization .
+
+ex:Sukkur a ex:Place .
+
+ex:US a ex:Organization .
+
+ex:Ulm a ex:Place .
+
+ex:University_of_Paris a ex:Organization .
+
+ex:University_of_Paris_Marie_in_1891 a ex:Organization .
+
+ex:University_of_Zurich a ex:Organization .
+
+ex:Warsaw a ex:Place .
+
+ex:Westmere_Institute_of_Technology a ex:Organization .
+
+ex:Zonnemaire a ex:Place .
+

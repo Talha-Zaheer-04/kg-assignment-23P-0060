@@ -1,0 +1,5 @@
+PREFIX ex: <http://example.org/kg#>
+SELECT ?person WHERE {
+  ?person a ex:Person .
+  FILTER NOT EXISTS { ?person ex:educatedAt ?school . }
+}

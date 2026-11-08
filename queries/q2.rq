@@ -1,0 +1,5 @@
+PREFIX ex: <http://example.org/kg#>
+SELECT ?predicate (COUNT(*) as ?count) WHERE {
+  ?s ?predicate ?o .
+  FILTER(STRSTARTS(STR(?predicate), "http://example.org/kg#"))
+} GROUP BY ?predicate

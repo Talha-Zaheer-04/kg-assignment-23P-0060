@@ -1,0 +1,6 @@
+"predicate","count"
+"http://example.org/kg#bornIn","4"
+"http://example.org/kg#receivedAward","1"
+"http://example.org/kg#educatedAt","7"
+"http://example.org/kg#worksAt","14"
+"http://example.org/kg#doctoralAdvisor","1"
