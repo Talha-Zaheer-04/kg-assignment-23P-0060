@@ -1,0 +1,7 @@
+# Reflection
+
+My predictions were mostly correct. I predicted that `worksAt` would have the lowest precision, and that came true: the extractor struggled with phrases like "moved to Italy" and "joined Newcomb", producing many false positives (E4 errors). The `bornIn` predicate was the most accurate, as expected.
+
+The open-world idea ("not in the graph does not mean false") changed how I read the results. Initially, I thought my code was failing if it didn't find Einstein's advisor. However, the absence of a fact in my graph does not mean Einstein had no advisor; it just means my extractor didn't find the sentence where it was mentioned (a False Negative). This helped me focus on improving the extraction rules rather than panicking about missing data.
+
+The pronoun resolution was also a major challenge. In the private document, "She later moved to Marlow" was tricky. My code correctly linked "She" to Bushra Awan because of the regex pre-processing. However, in the Wikipedia articles, the Named Entity Recognition (NER) sometimes got confused by co-authors like Paul Dirac, assigning him as the main subject. Fixing this required the "Filename Filter" trick. Overall, the assignment showed me that real-world NLP is messy, and understanding *why* it fails is more valuable than trying to achieve a perfect score.
