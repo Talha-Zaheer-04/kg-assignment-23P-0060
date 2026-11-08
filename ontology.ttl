@@ -1,0 +1,35 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ex: <http://example.org/kg#> .
+
+# 1. Define the Classes
+ex:Person a owl:Class .
+ex:Place a owl:Class .
+ex:Organization a owl:Class .
+ex:Award a owl:Class .
+
+# 2. Disjoint Classes (Nothing can be two things at once)
+ex:Person owl:disjointWith ex:Place .
+ex:Organization owl:disjointWith ex:Place .
+
+# 3. Define the Properties (Domain = Left side, Range = Right side)
+ex:bornIn a owl:ObjectProperty, owl:FunctionalProperty ; # Functional means max 1 birthplace
+    rdfs:domain ex:Person ;
+    rdfs:range ex:Place .
+
+ex:educatedAt a owl:ObjectProperty ;
+    rdfs:domain ex:Person ;
+    rdfs:range ex:Organization .
+
+ex:receivedAward a owl:ObjectProperty ;
+    rdfs:domain ex:Person ;
+    rdfs:range ex:Award .
+
+ex:worksAt a owl:ObjectProperty ;
+    rdfs:domain ex:Person ;
+    rdfs:range ex:Organization .
+
+ex:doctoralAdvisor a owl:ObjectProperty ;
+    rdfs:domain ex:Person ;
+    rdfs:range ex:Person .

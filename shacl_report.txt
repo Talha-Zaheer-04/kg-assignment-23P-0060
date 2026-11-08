@@ -1,0 +1,10 @@
+pyshacl -s shapes.ttl -e ontology.ttl test_graph.ttl
+Validation Report
+Conforms: False
+Results (1):
+Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
+        Severity: sh:Violation
+        Source Shape: [ sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("Violation: A person cannot have more than one birthplace.") ; sh:path ex:bornIn ]
+        Focus Node: ex:Yasir
+        Result Path: ex:bornIn
+        Message: Violation: A person cannot have more than one birthplace.
